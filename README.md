@@ -21,7 +21,7 @@ To follow this blog post, you need to have the following tools installed on your
 To get started, complete the following steps; this is a one-time setup:
 
 ```bash
-git clone __REPO_URL__
+git clone https://github.com/lsportsltd/blog-how-to-use-aws-iam-in-terraform.git
 cd blog-how-to-use-aws-iam-in-terraform
 ```
 
