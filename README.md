@@ -1,5 +1,7 @@
 # how-to-use-aws-iam-in-terraform
 
+![blog-how-to-use-aws-iam-in-terraform-banner](https://github.com/lsportsltd/blog-how-to-use-aws-iam-in-terraform/assets/154052290/dd47932c-e149-4eee-bb99-b322cfa4c36c)
+
 This blog post is a step-by-step guide on how to use AWS IAM in Terraform. After experiencing much pain and frustration, I finally figured out how to use AWS IAM in Terraform. This blog post will save you some time and frustration.
 The magical thing about this blog post is that you can do every step in this blog post locally on your machine without even owning an AWS account. This is because we will use the [Localstack](https://www.localstack.cloud/) tool to simulate AWS locally on your machine.
 
