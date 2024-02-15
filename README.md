@@ -184,6 +184,10 @@ This example results in the following output:
 No changes. Your infrastructure matches the configuration.
 ```
 
+The module [iam-assumable-role-with-oidc](https://registry.terraform.io/modules/terraform-aws-modules/iam/aws/latest/submodules/iam-assumable-role-with-oidc) is not the perfect example, as it uses `managed_policy_arns` and `inline_policy` properly in `aws_iam_role`, and by properly, I mean not setting them at all, allowing `aws_iam_role_policy_attachment` and `aws_iam_role_policyto` be used safely, see check how [iam-assuamble-role-with-oidc](https://github.com/terraform-aws-modules/terraform-aws-iam/blob/v5.34.0/modules/iam-assumable-role-with-oidc/main.tf#L87-L102) defines an aws_iam_role.
+
+As you already know, each module that creates an `aws_iam_role` should be inspected thoroughly. If the module is configured with no `inline_policy` and `managed_policy_arns`, it is safe to use the IAM Policy attachment without fearing conflict.
+
 
 ## Conclusion
 
