@@ -1,5 +1,10 @@
 .*
 !.*ignore*
 *.out
-*.tfstate
+*.tfstate*
 *.backup
+
+# checkov
+*.pyc
+tests/*/*
+!tests/*/*.tf
